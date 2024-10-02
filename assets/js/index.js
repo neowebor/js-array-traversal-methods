@@ -44,7 +44,7 @@ console.log(fullAgedPeople);
 // 4.
 
 const firstFullAgeWomen = usersInfo.findIndex(function(elem) {
-  return elem.gender === 'female' && elem.age >= 18;
+  return elem?.gender === 'female' && elem?.age >= 18;
 }); 
 
 console.log(firstFullAgeWomen);
@@ -52,7 +52,7 @@ console.log(firstFullAgeWomen);
 // 5.
 
 const fullAgedMans = usersInfo.every(function(elem) {
-  return elem.age >= 18 && elem.gender === "male";
+  return elem?.age >= 18 && elem?.gender === "male";
 });
 
 console.log(fullAgedMans);
