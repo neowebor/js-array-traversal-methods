@@ -35,25 +35,19 @@ const usersInfo = [
   { firstName: "Null", lastName: "Nullochyk", gender: 'male' },
 ];
 
-const fullAgedPeople = usersInfo.filter(function(elem) {
-  return elem?.age >= 18;
-});
+const fullAgedPeople = usersInfo.filter(elem => elem?.age >= 18);
 
 console.log(fullAgedPeople);
 
 // 4.
 
-const firstFullAgeWomen = usersInfo.findIndex(function(elem) {
-  return elem?.gender === 'female' && elem?.age >= 18;
-}); 
+const firstFullAgeWomen = usersInfo.findIndex(elem => elem?.gender === 'female' && elem?.age >= 18); 
 
 console.log(firstFullAgeWomen);
 
 // 5.
 
-const fullAgedMans = usersInfo.every(function(elem) {
-  return elem?.age >= 18 && elem?.gender === "male";
-});
+const fullAgedMans = usersInfo.every(elem => elem?.age >= 18 && elem?.gender === "male");
 
 console.log(fullAgedMans);
 
